@@ -1,16 +1,33 @@
 import java.util.Scanner;
 
 public class trueorfalse {
+
+    public static void separator(){
+        System.out.println("------------------------------------------------");
+    }
+    
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner checker = new Scanner(System.in);
 
-        System.out.print("Enter a number: ");
-        int num = scanner.nextInt();
+        while(true){
+            separator();
+            System.out.print("Enter a number: ");
+            double num = checker.nextDouble();
 
-        boolean isPositive = num > 0;
-        boolean isNegative = num < 0;
+            if (num > 0){
+                separator();
+                System.out.println(num + " is Positive");
+            }
+            
+            else if (num < 0) {
+                separator();
+                System.out.println(num +" is negative? ");
+            }
 
-        System.out.println("Is the number positive? " + isPositive);
-        System.out.println("Is the number negative? " + isNegative);
+            else {
+                separator();
+                System.out.println("0 is neither positive or negative");
+            }
+        }
     }
 }
