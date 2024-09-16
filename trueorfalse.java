@@ -18,12 +18,10 @@ public class trueorfalse {
                 separator();
                 System.out.println(num + " is Positive");
             }
-            
             else if (num < 0) {
                 separator();
                 System.out.println(num +" is negative? ");
             }
-
             else {
                 separator();
                 System.out.println("0 is neither positive or negative");
